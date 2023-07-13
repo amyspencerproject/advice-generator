@@ -78,8 +78,95 @@ select {
 
 /* ======= Variables ======= */
 
+:root {
+  --quote-text: hsl(193, 38%, 86%);
+  --neon-green-highlight: hsl(150, 100%, 66%);
+  --body-background: hsl(218, 23%, 16%);
+  --card-background: hsl(217, 19%, 24%);
+  --decorartive-line: hsl(217, 19%, 38%);
+}
+
 /* ======= Base Styles ======= */
+
+body {
+  background-color: var(--body-background);
+  display: grid;
+  place-content: center;
+  font-family: "Manrope", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advice-card {
+  align-items: center;
+  background-color: var(--card-background);
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  width: 90%;
+  position: relative;
+}
+
+.dice-cta {
+  position: absolute;
+  top: 93%;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+
+  display: grid;
+  place-content: center;
+
+  background-color: var(--neon-green-highlight);
+  border: none;
+}
+
+.advice-number {
+  color: var(--neon-green-highlight);
+  font-size: 0.6875rem;
+  letter-spacing: 3.46px;
+  margin: 3rem 1rem 1rem 1rem;
+}
+
+.quote-header {
+  color: var(--quote-text);
+  font-size: 1.5rem;
+  margin: 1rem 2.25rem;
+}
+
+.divider-pattern {
+  margin: 1rem 1rem 4rem 1rem;
+}
 
 /* ======= Footer ======= */
 
+footer {
+  display: flex;
+  justify-content: center;
+  margin-block-start: 5rem;
+}
+
+.attribution {
+  color: var(--quote-text);
+  font-size: 0.6rem;
+  text-align: center;
+  width: 80%;
+}
+
+.attribution a {
+  color: var(--neon-green-highlight);
+}
+
 /* ========================= Media Queriers ========================= */
+
+/* desktop change at 960px */
+@media screen and (min-width: 60rem) {
+  .advice-card {
+    max-width: 33.75rem;
+  }
+}

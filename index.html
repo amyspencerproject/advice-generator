@@ -24,15 +24,41 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    Advice #<!-- Advice ID goes here -->
+    <main>
+      <div class="advice-card">
+        <p class="advice-number">Advice <span id="number">#117</span></p>
 
-    "<!-- Advice text goes here -->"
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+        <h1 class="quote-header" id="quote">
+          <q
+            >It is easy to sit up and take notice, what's difficult is getting
+            up and taking action.</q
+          >
+        </h1>
+        <picture class="divider-pattern">
+          <source
+            media="(min-width: 60rem)"
+            srcset="./images/pattern-divider-desktop.svg"
+          />
+          <img src="./images/pattern-divider-mobile.svg" alt="" class="" />
+        </picture>
+        <button class="dice-cta">
+          <img src="./images/icon-dice.svg" alt="" />
+        </button>
+      </div>
+      <!-- <button class="dice-cta">
+        <img src="./images/icon-dice.svg" alt="" />
+      </button> -->
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/amyspencerproject"
+          >Amy Spencer</a
+        >.
+      </p>
+    </footer>
   </body>
 </html>

@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Github Repo URL: [QR Code Repo](https://github.com/amyspencerproject/qr-code)
-- Live Site URL: [QR Code Page](https://amyspencerproject.github.io/qr-code/)
+- Github Repo URL: [Advice Generator Repo](https://github.com/amyspencerproject/advice-generator)
+- Live Site URL: [Advice Generator Page](https://amyspencerproject.github.io//advice-generator/)
 
 ## My process
 
