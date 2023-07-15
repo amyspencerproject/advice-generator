@@ -47,13 +47,15 @@ Users should be able to:
 
 ### What I learned
 
--
+- Had some issues with the cache of the data sent by the API in Mozilla Firefox. Chrome did not have issues with this at all. The API would send the first random advice text and the Firefox browsert would keep this and not update with subsequent button clicks.
+- In the API documentation it states that the " Advice is cached for 2 seconds. Any repeat-request within 2 seconds will return the same piece of advice." so I thought this was an issue with the API at first.
+- I found a solution using `cache: "no-cache"` in the fetch request.
 
 ### Continued development
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Request/cache) - MDN reference for handling browser cache in the request/fetch code.
 
 ## Author
 

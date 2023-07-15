@@ -3,18 +3,25 @@ const quoteNumber = document.getElementById("number");
 const diceButton = document.getElementById("dice-cta");
 
 const getQuote = async function () {
-  const response = await fetch("https://api.adviceslip.com/advice");
+  console.log("Something worked! 🚀");
+  const response = await fetch("https://api.adviceslip.com/advice", {
+    cache: "no-cache",
+  });
   const data = await response.json();
   const responseId = data.slip.id;
   const responseQuote = data.slip.advice;
   quoteNumber.innerText = responseId;
   quote.innerText = responseQuote;
+  console.log(data);
 };
 
-getQuote();
+// getQuote();
 
 diceButton.addEventListener("click", (e) => {
   //   quoteNumber.innerText = "";
   //   quote.innerText = "";
+  //   const responseId = "";
+  //   const responseQuote = "";
+  //   const data = "";
   getQuote();
 });
