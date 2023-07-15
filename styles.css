@@ -126,6 +126,10 @@ main {
   border: none;
 }
 
+.dice-cta:hover {
+  box-shadow: 0 0 40px var(--neon-green-highlight);
+}
+
 .advice-number {
   color: var(--neon-green-highlight);
   font-size: 0.6875rem;

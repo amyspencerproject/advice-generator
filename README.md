@@ -29,7 +29,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+Desktop button hover state and generated advice after button submit
+
+![](./screenshots/Screenshot%20desktop%20button.png)
+![](./screenshots/Screenshot%20desktop%20advice.png)
+
+Mobile view of advice
+
+![](./screenshots/Screenshot%20mobile%20advice.png)
 
 ### Links
 
@@ -42,8 +49,9 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS Variables
-- CSS Grid
+- CSS Grid & Flex
 - Mobile-first workflow
+- Vanilla JavaScript
 
 ### What I learned
 

@@ -15,13 +15,6 @@ const getQuote = async function () {
   console.log(data);
 };
 
-// getQuote();
-
 diceButton.addEventListener("click", (e) => {
-  //   quoteNumber.innerText = "";
-  //   quote.innerText = "";
-  //   const responseId = "";
-  //   const responseQuote = "";
-  //   const data = "";
   getQuote();
 });
